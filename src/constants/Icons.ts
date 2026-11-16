@@ -155,7 +155,7 @@ import { SlGraph as Graph } from "react-icons/sl";
 import {
   TbBinaryTree2 as BinaryTree,
   TbCurrencyDollarZimbabwean as DollarZimbabwean,
-  Tb2Fa as Fa2,
+  TbAuth2Fa as Fa2,
   TbHexagonLetterN as HexagonLetterN,
   TbHexagonLetterZ as HexagonLetterZ,
   TbCircleLetterZ,
@@ -240,6 +240,8 @@ const iconsForMenu: IconsFor = {
     "Avalanche RedBridge": CableStayedBridge,
     "Akash Network Zcashd": Akash,
     "Akash Network Zebra": IoCloudUploadOutline,
+    "Akash Network Zakura": Akash,
+    "Thus Spoke Zakura Akash": Akash,
     "BTCPayServer Zcash Plugin": Pay,
     "Full Nodes": ServerSolid,
     "Nym VPN": MdVpnLock,
