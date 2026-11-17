@@ -13,7 +13,7 @@ const GovernanceDashboard = () => {
     const fetchParams = async () => {
       try {
         const response = await fetch(
-          'https://raw.githubusercontent.com/ZecHub/zechub-wiki/main/public/data/namada/protocol_parameters.json'
+          '/data/namada/protocol_parameters.json'
         );
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const jsonData = await response.json();
@@ -29,7 +29,7 @@ const GovernanceDashboard = () => {
     const fetchProps = async () => {
       try {
         const response = await fetch(
-          'https://raw.githubusercontent.com/ZecHub/zechub-wiki/main/public/data/namada/props.json'
+          '/data/namada/props.json'
         );
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const jsonData = await response.json();
