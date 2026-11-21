@@ -46,6 +46,7 @@ import { rewriteNewUserGuide } from "@/lib/pageOverrides/newUserGuide";
 import { rewriteStyleGuide } from "@/lib/pageOverrides/styleGuideGuide";
 import { rewriteContributingGuide } from "@/lib/pageOverrides/contributingGuide";
 import { rewriteBuyingZecGuide } from "@/lib/pageOverrides/buyingZecGuide";
+import { rewriteCustodialExchangesGuide } from "@/lib/pageOverrides/custodialExchangesGuide";
 import { rewriteGovernanceGuide } from "@/lib/pageOverrides/governanceGuide";
 import { rewriteZipListGuide } from "@/lib/pageOverrides/zipListGuide";
 import { rewriteTransactionsGuide } from "@/lib/pageOverrides/transactionsGuide";
@@ -6458,6 +6459,9 @@ export default async function Page(props: {
   }
   if (slug.join("/") === "using-zcash/buying-zec" && locale === routing.defaultLocale && processedMarkdown) {
     processedMarkdown = rewriteBuyingZecGuide(processedMarkdown);
+  }
+  if (slug.join("/") === "using-zcash/custodial-exchanges" && locale === routing.defaultLocale && processedMarkdown) {
+    processedMarkdown = rewriteCustodialExchangesGuide(processedMarkdown);
   }
   if (slug.join("/") === "using-zcash/transactions" && locale === routing.defaultLocale && processedMarkdown) {
     processedMarkdown = rewriteTransactionsGuide(processedMarkdown);
